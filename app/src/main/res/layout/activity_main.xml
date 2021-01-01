@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/ib_addproduct_home"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/icon_add_product"
+        app:layout_constraintBottom_toTopOf="@+id/tv_addproduct_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lv_products" />
+
+    <ImageButton
+        android:id="@+id/ib_homepage_home"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="34dp"
+        android:src="@drawable/icon_home_page"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_addproduct_home"
+        app:layout_constraintStart_toStartOf="@+id/lv_products"
+        app:layout_constraintTop_toTopOf="@+id/ib_addproduct_home" />
+
+    <TextView
+        android:id="@+id/tv_homepage_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="13dp"
+        android:text="首页"
+        android:textColor="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ib_homepage_home" />
+
+    <TextView
+        android:id="@+id/tv_addproduct_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="13dp"
+        android:text="发布"
+        android:textColor="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ib_addproduct_home" />
+
+    <TextView
+        android:id="@+id/tv_myinfo_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="13dp"
+        android:text="我的"
+        android:textColor="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ib_myinfo_home" />
+
+    <ImageButton
+        android:id="@+id/ib_myinfo_home"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="31dp"
+        android:src="@drawable/icon_personal_center"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_addproduct_home"
+        app:layout_constraintEnd_toEndOf="@+id/lv_products"
+        app:layout_constraintTop_toTopOf="@+id/ib_addproduct_home" />
+
+    <ListView
+        android:id="@+id/lv_products"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="66dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_homepage_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_select" />
+
+    <ImageButton
+        android:id="@+id/ib_refresh"
+        android:layout_width="45dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_select"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ib_select"
+        app:layout_constraintTop_toTopOf="@+id/ib_select"
+        app:srcCompat="@drawable/icon_refresh" />
+
+    <ImageButton
+        android:id="@+id/ib_select"
+        android:layout_width="45dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_select"
+        app:layout_constraintEnd_toEndOf="@+id/tv_myinfo_info"
+        app:layout_constraintStart_toEndOf="@+id/ib_addproduct_home"
+        app:layout_constraintTop_toTopOf="@+id/et_select"
+        app:srcCompat="@drawable/icon_select" />
+
+    <EditText
+        android:id="@+id/et_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="75dp"
+        android:ems="10"
+        android:hint="请输入筛选条件"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_homepage_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="TextView"
+        android:textColor="#009688"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
